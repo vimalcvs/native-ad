@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <FrameLayout
+            android:id="@+id/bannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.vimalcvs.ads.NativeMedium
+            android:id="@+id/nativeMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?colorSurfaceVariant"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:gnt_template_type="@layout/gnt_medium_template_view" />
+
+
+        <com.vimalcvs.ads.NativeSmall
+            android:id="@+id/nativeSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="?colorSurfaceVariant"
+            app:gnt_template_type="@layout/gnt_small_template_view" />
+
+
+    </LinearLayout>
+</layout>
